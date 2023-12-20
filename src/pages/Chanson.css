@@ -1,0 +1,159 @@
+/* composant chanson */
+
+.active {
+    display: block;
+    text-align: center;
+
+}
+
+.inactive,
+.pop.inactive {
+    display: none;
+}
+
+.chanson {
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.chansonFlex {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    gap: 20px;
+    align-items: flex-start;
+    justify-items: flex-start;
+
+    & img {
+        border-radius: 20px 20px 20px 20px;
+        border: 2px solid var(--rose);
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 40% 40% 15%;
+
+    }
+}
+
+.infoChanson {
+    & h2 {
+        margin: 0px;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 24px;
+    }
+
+    & .infoArtist a {
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+
+        & :hover {
+            color: var(--roseHover);
+        }
+    }
+
+    & .infoAlbum a {
+
+        color: black;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 14px;
+
+    }
+}
+
+.details {
+    & button {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        margin: 0;
+        padding-right: 10px;
+
+        & :hover {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .iconDetails {
+        font-size: 35px;
+    }
+
+    & .favoris {
+        font-size: 30px;
+    }
+}
+
+.fav {
+    display: flex;
+
+    & span {
+        font-size: 12px;
+    }
+}
+
+.pop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--back);
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.668);
+    z-index: 1000;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px 50px 50px 50px;
+    border: 2px solid var(--rose);
+
+    & h2 {
+        margin-top: 40px;
+        font-size: 18px;
+        color: white;
+        font-weight: 300;
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    & input {
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 1px solid var(--mauve);
+        width: 50vw;
+        outline: none;
+        caret-color: white;
+        color: white;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    & button {
+        margin-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 50px 50px 50px 50px;
+        color: white;
+        background-color: var(--rose);
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    & .fermer {
+        background-color: transparent;
+        position: absolute;
+        top: 5px;
+        right: -40px;
+        background-color: transparent;
+
+    }
+}
+
+.pop.active {
+    display: block;
+}

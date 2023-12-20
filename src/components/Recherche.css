@@ -1,0 +1,80 @@
+/* barre de recherche */
+
+.recherche {
+  background-color: transparent;
+  border: 2px solid var(--rose);
+  height: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 0.5em;
+  padding-left: 0.5em;
+  outline: none;
+  font-family: 'Plus Jakarta Sans';
+  width: 40%;
+
+  @media only screen and (min-width: 768px) {
+    width: 60%;
+  }
+
+}
+
+  
+  .recherche::placeholder {
+    color: white;
+    @media only screen and (max-width: 560px) {
+      font-size: 10px;
+
+}
+  }
+
+  .recherche:focus {
+    border: 2px solid var(--roseHover); 
+  }
+  
+  .option{
+    background-color: var(--rose);
+    border: 2px solid var(--rose); 
+    height: 27px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 0.5em;
+    padding-left: 0.5em;
+    outline: none;
+    font-family: 'Plus Jakarta Sans'; 
+    & :hover{
+        background-color: var(--roseHover);
+    }
+
+    @media only screen and (max-width: 560px) {
+      font-size: 12px;
+      margin-right: 0.5em;
+      padding-left: 0;
+      height: 20px;
+      width: 10%;
+
+}
+  }
+
+  .btnRecherche{
+    background-color:  transparent;
+    border: none; 
+    border-radius: 20px;
+    color: white;
+    margin-right: 0.5em;
+    padding: 5px;
+    outline: none;
+
+    & .iconRecherche{
+        font-size: 40px;
+    }
+
+  }
+
+  .formRecherche{
+    display: flex;
+    align-items: center; 
+    justify-items: center;
+  }
+
+
+  

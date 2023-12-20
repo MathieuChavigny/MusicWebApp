@@ -1,0 +1,50 @@
+/* Accueil récent */
+
+.accueilRecent{
+    padding: 20px;
+
+    @media only screen and (min-width: 992px) {
+        padding: 50px;
+        
+      }
+
+    & h2{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 24px;
+            font-family: 'Plus Jakarta Sans';
+
+            @media only screen and (min-width: 1200px) {
+                font-size: 36px;
+            
+            }
+
+            @media only screen and (min-width: 1400px) {
+                padding-left: 70px;
+                padding-right: 50px;
+            
+            }
+    }
+
+    & .chansonListe03{
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        
+        }
+    
+        @media only screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        
+        }
+    
+        @media only screen and (min-width: 1400px) {
+            padding: 60px;
+        
+        }
+    }
+}

@@ -1,0 +1,71 @@
+/* navigation */
+
+.navPrincipal {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 8% 20% 51% 7% 7%;
+    gap: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-right: 10px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    align-items: center; 
+    justify-items: center; 
+    background-color: var(--back);
+
+    @media only screen and (max-width: 560px) {
+        padding-left: 20px;
+
+  }
+
+    @media only screen and (min-width: 768px) {
+        padding-left: 20px;
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .lirecherche {
+        justify-self: end; 
+      }
+
+}
+}
+.icon{
+    font-size: 35px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    @media only screen and (max-width: 560px) {
+        font-size: 20px;
+
+  }
+
+}
+.listeLecture{
+    font-size: 35px;
+
+    @media only screen and (max-width: 560px) {
+        font-size: 20px;
+
+  }
+}
+
+.user{
+    font-size: 35px;
+    padding-bottom: 10px;
+    @media only screen and (max-width: 560px) {
+        font-size: 20px;
+
+  }
+}
+.logo{
+    width: 100%;
+    height: auto;
+
+    @media only screen and (max-width: 560px) {
+        width: 80%;
+
+  }
+}

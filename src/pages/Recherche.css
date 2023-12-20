@@ -1,0 +1,135 @@
+/* page resultat de recherche */
+
+.result{
+    background-color: var(--back);
+    margin: 0;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--mauve);
+    font-family: 'Calistoga', serif;
+    font-size: 32px ;
+    color: var(--mauve);
+
+    
+    @media only screen and (min-width: 992px) {
+        padding-left: 40px;
+        font-size: 48px ;
+    
+    }
+
+    @media only screen and (min-width: 1400px) {
+        padding: 60px;
+    
+    }
+
+    & span{
+      
+        color: white;
+    }
+
+}
+
+
+.resultTxt{
+    padding-top: 20px;
+    background-color: var(--back);
+}
+
+.resultat{
+    background-color: var(--back);
+}
+
+.resultatRecher{
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    padding: 40px;
+
+    @media only screen and (min-width: 576px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 40px;
+    
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding: 60px;
+        justify-content: flex-end;
+        grid-template-columns: 33% 33% 33%;
+    
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+}
+
+.infinite-scroll-component__outerdiv{
+
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    padding: 40px;
+    display: flex;
+
+}
+
+.infinite-scroll-component {
+
+
+    @media only screen and (min-width: 576px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
+        grid-gap:20px;
+    
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding-left: 60px;
+        justify-content: flex-end;
+        grid-template-columns: 33% 33% 33%;
+    
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+        padding-left: 110px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    @media only screen and (min-width: 1400px) {
+        padding-left: 160px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+.infinte2{
+
+    & .infinite-scroll-component {
+
+        padding: 0px;
+
+        @media only screen and (min-width: 576px) {
+            display: grid;
+            grid-template-columns: 100%;
+            
+        
+        } 
+    
+        @media only screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        @media only screen and (min-width: 1400px) {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+
+}

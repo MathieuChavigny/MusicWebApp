@@ -1,0 +1,78 @@
+.lectureFlex02{
+
+    margin-top: 40px;
+    padding-top: 40px;
+
+}
+
+
+
+.titreAlbum{
+    
+    background-color: white;
+    margin-top: 40px;
+    padding: 40px;
+    padding-bottom: -1px;
+    align-items: center;
+    border-bottom: 1px solid var(--mauve);
+    border-top: 1px solid var(--mauve);
+    background-color: var(--back);
+
+    
+    @media only screen and (min-width: 768px) {
+        display: flex;
+    }
+    
+
+    & h3{
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 24px;
+        margin-left: 20px;
+        padding-right: 40px;
+       
+
+        @media only screen and (min-width: 992px) {
+            font-size: 32px;
+        }
+    }
+
+    & button{
+        height: 50px;
+        color: white;
+        margin-left: 20px;
+    }
+
+    & input{
+        margin-left: 20px;
+        border: 0px;
+        border-bottom: 2px solid var(--mauve);
+        background-color: transparent;
+        outline: none;
+        caret-color: white;
+        color: white;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+        font-weight: 300;
+        margin-right: 10px;
+        margin-bottom: 40px;
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 0px;
+        }
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.37);
+            font-family: 'Plus Jakarta Sans';
+            font-size: 12px;
+        }
+       
+    }
+}
+
+.btnSup{
+    margin-left: 60px;
+    margin-top: 5px;
+    color: white;
+
+}

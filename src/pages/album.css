@@ -1,0 +1,28 @@
+/* album */
+
+.album02{
+
+
+    & img{
+        border-radius: 20px 20px 20px 20px;
+        border: 2px solid var(--rose);
+        width: 100%;
+
+        
+    }
+
+    & .txt a{
+        font-size: 16px;
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    & .flex{
+        padding: 10px;
+
+        @media only screen and (min-width: 769px) {
+            display: block;
+        
+        }
+    }
+}

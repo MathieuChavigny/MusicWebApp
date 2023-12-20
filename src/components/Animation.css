@@ -1,0 +1,23 @@
+/* animation musique */
+
+.barres {
+    align-items: center;
+    display: flex;
+    height: 90px;
+    width: 70vw; 
+    margin: 0; 
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+        width: 80vw;
+        padding-right: 40px;
+
+  }
+}
+
+.barre {
+    flex-grow: 1;
+    width: 10px;
+    background-color: var(--rose);
+    transition: height 0.25s;
+}

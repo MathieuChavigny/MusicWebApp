@@ -1,0 +1,41 @@
+.user02{
+    background-color: var(--back);
+    @media only screen and (min-width: 992px) {
+        padding-top: 20px;
+        
+      }
+    & .userFlex{
+        background-color: white;
+        display:flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 992px) {
+            padding: 50px;
+            
+          }
+
+        & img{
+            border-radius: 50%;
+            width: 10%;
+            height: auto;
+            border: 2px solid var(--rose);
+        }
+
+        & h4{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 24px;
+            font-family: 'Plus Jakarta Sans'; 
+        }
+
+        & .iconOut{
+            font-size: 35px;
+        }
+
+        & button{
+            background-color: transparent;
+        }
+    }
+}

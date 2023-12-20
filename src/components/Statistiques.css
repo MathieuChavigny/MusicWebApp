@@ -1,0 +1,48 @@
+.statFlex{
+    display: grid;
+    
+
+
+    @media only screen and (min-width: 992px) {
+        grid-template-columns: 50% 50%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    & h2{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+.ecoute{
+    background-color: var(--back);
+    color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 24px;
+        padding: 60px;
+       
+
+        @media only screen and (min-width: 992px) {
+            font-size: 32px;
+            padding: 60px;
+        }
+}
+
+.artisteFlex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding: 60px;
+
+    @media only screen and (min-width: 992px) {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}

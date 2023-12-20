@@ -1,0 +1,46 @@
+/* page pour album */
+
+.chansonAlbum{
+
+    background-color: var(--back);
+    padding-top: 20px;
+
+    & h1{
+        margin: 0;
+        padding: 20px;
+        padding-top: 50px;
+        border-top: 2px solid var(--mauve);
+        font-family: 'Calistoga', serif;
+        font-size: 32px ;
+        color: white;
+
+        
+        @media only screen and (min-width: 992px) {
+            padding-left: 40px;
+            font-size: 48px ;
+        
+        }
+
+        @media only screen and (min-width: 1400px) {
+            padding: 60px;
+        
+        }
+    }
+
+}
+
+.chansonListe02{
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+    }
+
+    @media only screen and (min-width: 1400px) {
+        padding: 60px;
+    
+    }
+}

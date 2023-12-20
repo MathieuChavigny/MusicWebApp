@@ -1,0 +1,39 @@
+/* BarreLecture.css */
+
+.barreLecture {
+    width: 70vw;
+    height: 2px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    margin-top: -100px;
+
+    @media only screen and (min-width: 768px) {
+      width: 80vw;
+      padding-right: 40px;
+
+}
+
+  }
+  
+  .barreLecture::-webkit-slider-thumb {
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    
+    appearance: none;
+    margin-top: -15px; 
+  }
+  
+  .barreLecture::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  
+  
+ 
+ 
+ 

@@ -1,0 +1,179 @@
+/* liste de lecture */
+
+.listeLecture02 {
+    background-color: var(--back);
+    padding-top: 20px;
+    position: relative;
+
+}
+
+.infoLecture {
+    background-color: var(--back);
+    padding: 20px;
+
+
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 65% 35%;
+
+    }
+
+    @media only screen and (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+    }
+
+    @media only screen and (min-width: 1400px) {
+        padding: 60px;
+
+    }
+
+    & h2 {
+
+        margin: 0;
+        font-family: 'Calistoga', serif;
+        font-size: 32px;
+        color: white;
+
+
+        @media only screen and (min-width: 992px) {
+            padding-left: 40px;
+            font-size: 48px;
+
+        }
+
+    }
+}
+
+.liLecture {
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+
+    @media only screen and (min-width: 1400px) {
+        padding: 60px;
+
+    }
+
+}
+
+.lectureFlex {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 20px;
+
+    & h3 {
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 24px;
+        margin-left: 20px;
+    }
+}
+
+.nouvelleListe {
+
+
+    label {
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+    }
+}
+
+.ouvrePop {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--rose);
+    padding: 0px;
+    padding-top: 12px;
+
+    & :hover {
+        color: var(--roseHover);
+    }
+
+}
+
+.ajoute {
+
+    margin-right: 8px;
+    font-size: 32px;
+
+}
+
+.ouvrePop:hover {
+    color: var(--roseHover);
+    background-color: transparent;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--back);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .closePopup {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background-color: transparent;
+    }
+}
+
+.popup-content {
+
+    & h3 {
+        color: white;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+}
+
+.nouvelleListe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    & input {
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 1px solid var(--mauve);
+        width: 500px;
+        outline: none;
+        caret-color: white;
+        color: white;
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    & button {
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 50px 50px 50px 50px;
+        color: white;
+    }
+}
+
+.ouvrePop:hover .popup {
+    display: block;
+}
+
+.mr {
+    margin-right: 16px;
+}

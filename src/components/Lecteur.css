@@ -1,0 +1,109 @@
+/* lecteur */
+
+.lecteurFlex{
+    display: grid;
+    grid-template-columns: 8% 8% 8% 70%  ;
+    gap: 5px;
+    margin-top: 0px;
+    padding-right: 10px;
+    align-items: center; 
+    justify-items: center; 
+    width: 100vw;
+    
+    @media only screen and (min-width: 768px) {
+        grid-template-columns: 5% 5% 5% 85%  ;
+    
+    }
+
+    & button{
+        background-color: transparent;
+        border: none; 
+
+        & :hover{
+            outline: none; 
+            border: none; 
+        }
+    }
+
+}
+
+
+.precedent {
+    font-size: 25px;
+}
+.play {
+    font-size: 25px;
+}
+.suivant{
+    font-size: 25px;
+}
+
+.infoLecteur{
+    
+        display: flex;
+
+        & p{
+            font-family: 'Plus Jakarta Sans';
+            margin-right: 50px;
+        }
+}
+
+.animation{
+    position: relative;
+
+}
+.lecturePosition{
+    position: absolute;
+    margin-top: -60px;
+}
+
+.volume {
+    
+    height: 2px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+
+  }
+  
+
+  .volume::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    background-color: var(--rose);
+    border-radius: 50%;
+    border: none;
+    appearance: none;
+    margin-top: -05px;
+
+  }
+  
+  .volume::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+.volumePosition{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-left: 10px;
+margin-right: 20px;
+
+& button{
+    background-color: transparent;
+    border: none; 
+
+    & :hover{
+        outline: none; 
+        border: none;
+    }
+}
+
+& .favoris{
+    font-size: 25px;
+}
+    
+}
+

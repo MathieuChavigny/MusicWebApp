@@ -1,0 +1,59 @@
+/* app général */
+:root{
+  --rose:#E076AB;
+  --roseHover:#7D3B64;
+  --back:#1C1839;
+  --mauve:#616AAE;
+  --mauveHover:#3D4268;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #7D3B64;
+}
+
+
+li{
+  list-style: none;
+  background-color: transparent;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  grid-template-columns: 33% 33% 33%;
+  
+
+}
+  
+}

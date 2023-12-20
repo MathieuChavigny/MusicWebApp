@@ -1,0 +1,14 @@
+.artiste{
+
+    & img{
+        width: 90%;
+        border-radius: 25px 25px 25px 25px;
+        border: 2px solid var(--rose);
+    }
+
+    & h2{
+        color: var(--rose);
+        font-family: 'Plus Jakarta Sans';
+        font-size: 18px;
+    }
+}
